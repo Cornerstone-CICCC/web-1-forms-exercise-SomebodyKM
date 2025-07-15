@@ -9,6 +9,98 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" minlength="12">
+            </div>
+            <div class="field">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <div class="field">
+                <label for="color">Favorite Color:</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div class="field">
+                <label for="hobby">Hobby:</label>
+                <input type="text" list="hobby">
+                <datalist id="hobby">
+                    <option value="Drawing"></option>
+                    <option value="Swimming"></option>
+                    <option value="Dancing"></option>
+                </datalist>
+            </div>
+            <div class="field">
+                <label for="experience">Experience Level:</label>
+                <input type="range" name="experience" id="experience">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Preferences</legend>
+            <div class="field">
+                <label for="contact">Preferred Contact Method:</label>
+                <select name="contact" id="contact">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="mail">Mail</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="subscribe">Subscribe to Newsletter</label>
+                <input type="checkbox" name="subscribe" id="subscribe">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <div class="field">
+                <h3>Gender:</h3>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>More Information</legend>
+            <div class="field">
+                <label for="bio">Bio:</label>
+                <textarea name="bio" id="bio" rows="5"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <div class="field">
+                <label for="files">Resume and other ceretificates:</label>
+                <input type="file" multiple accept=".doc, .docx, .pdf, .jpg, .png" name="files" id="files">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submission</legend>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
     </form>
 </body>
 </html>
